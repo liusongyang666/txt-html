@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="text/html">
+        <title>第6个案例</title> 
+    </head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body,input,p{margin:0;padding:0;}
+body{font:12px/1.5 Tahoma;}
+#outer{width:200px;margin:10px auto;}
+input{margin-right:5px;vertical-align:middle;}
+#tips{padding:5px;margin-top:5px;background:#ffefa4;border:1px solid #f90;display:none;}
+
+    </style>
+    <body >
+         
+            <div id="outer">
+                    <label><input type="checkbox" id="fx" />两周内自动登陆</label>
+                    <div id="tips">为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</div>
+                </div>    
+        
+            
+    </body>
+    <script>
+      var fx=document.getElementById('fx')
+        var tipe=document.getElementById('tips')
+        fx.onmousemove=function(){
+            tipe.style.display='block'
+        }
+        fx.onmouseout=function(){
+            tipe.style.display='none'
+        }
+    </script>
+</html>
