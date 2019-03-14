@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="text/html">
+        <title>第6个案例</title> 
+    </head>
+    <style>
+
+
+        </style>
+        
+    <body >
+      
+            <div id="outer">
+                    <h2 id="a">播放列表...</h2>
+                    <ul id="b">
+                        <li><a href="javascript:;">玩家之徒 - 蔡依林</a></li>
+                        <li><a href="javascript:;">原谅我就是这样的女生 - 戴佩妮</a></li>
+                        <li><a href="javascript:;">猜不透 - 丁当</a></li>
+                        <li><a href="javascript:;">自导自演 - 周杰伦</a></li>
+                        <li><a href="javascript:;">浪漫窝 - 弦子</a></li>
+                        <li><a href="javascript:;">流年 - 王菲</a></li>
+                    </ul>
+                </div>
+                
+           
+    </body>
+    <script>
+        var as=1;
+        var b=document.getElementById('b')
+       var a=document.getElementById('a')
+       a.onclick=function(){
+            
+        //    b.style.display = b.style.display == "none" ? "block" : "none";
+        if(as==1){
+            b.style.display='none'
+            as=0
+            
+        }else if(as==0){
+            b.style.display='block'
+            as=1
+        }
+        
+        }
+    </script>
+</html>
