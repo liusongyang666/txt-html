@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="text/html">
+        <title>第三个案例</title> 
+    </head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        
+
+    </style>
+    <body >
+            <p><input type="text" id="i1" value="北京市" /></p>
+            <p><input type="text" id="i2" value="朝阳区" /></p>
+            <p><button id='but'>传参</button></p>
+            
+        
+            
+    </body>
+    <script>
+  var but=document.getElementById('but')
+  var i1=document.getElementById('i1')
+  var i2=document.getElementById('i2')
+  but.onclick=function(){
+      alert(i1.value)
+      alert(i2.value)
+  }
+    </script>
+</html>
