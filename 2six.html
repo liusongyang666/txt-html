@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="text/html">
+        <title>第二个案例</title> 
+    </head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+img{
+    opacity: .1;
+}
+.d{
+    opacity: 1;  
+}
+
+    </style>
+    <body di="body">
+            <ul id="imgList">
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                    <li><img src="./day1//imgs/图片2_01_06.png" /></li>
+                </ul>
+                
+    </body>
+    <script>
+   var li=document.getElementsByTagName('li')
+   var img=document.getElementsByTagName('img')
+  for(var i=0;i<img.length;i++){
+      img[i].onmousemove=function(){
+          this.className='d'
+      }
+      img[i].onmouseout=function(){
+          this.className='img'
+      }
+  }
+   
+    </script>
+</html>

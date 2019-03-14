@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="text/html">
+        <title>第四个案例</title> 
+    </head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      #outer{width:330px;height:100px;margin:10px auto;}
+#outer div{float:left;width:100px;height:100px;margin:0 5px;background:red;}
+
+
+    </style>
+    <body >
+            <button id='dj'>点击将DIV变成红色</button>
+            <div id='outer' >
+                <div ></div>
+                <div ></div>
+                <div ></div>
+            </div>
+            
+        
+            
+    </body>
+    <script>
+        var dj=document.getElementById('dj')
+        var aouter=document.getElementById("outer").getElementsByTagName('div')
+            dj.onclick=function(){
+                alert('5')
+                for(let i=0;i<=aouter.length;i++) {
+                    
+                    aouter[i].style.background="#000"
+                    
+                    }
+                       
+                
+            }
+
+    </script>
+</html>

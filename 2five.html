@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="text/html">
+        <title>第6个案例</title> 
+    </head>
+    <style>
+        body,p{margin:0;padding:0;}
+        body{color:#333;font:12px/1.5 Tahoma;padding-top:10px;}
+        #outer{width:300px;margin:0 auto;}
+        p{margin-bottom:10px;}
+        button{margin-right:5px;}
+        label{width:5em;display:inline-block;text-align:right;}
+        input{padding:3px;font-family:inherit;border:1px solid #ccc;}
+        #div1{color:#fff;width:180px;height:180px;background:#000;margin:0 auto;padding:10px;}
+        </style>
+        
+        
+    <body >
+        <div id="outer">
+            <p><label>属性名：</label><input type="text" id="name" value="background" /></p>
+            <p><label>属性值：</label><input type="text" id="zhi" value="blue" /></p>
+            <p><label></label><button id="a">确定</button><button id="cz">重置</button></p>
+        </div>
+        <div id="div1">在上方输入框输入"属性名"及"属性值"，点击确定按钮查看效果。</div>
+        
+        
+           
+    </body>
+    <script>
+                var name=document.getElementById('name').value
+                var zhi=document.getElementById('zhi')
+                var div=document.getElementById('div1')
+                var cz=document.getElementById('cz')
+                var a=document.getElementById('a')
+                a.onclick=function(){
+                        div.style[name]=zhi.value 
+                }
+                cz.onclick=function(){
+                    div.style[name]='black' 
+                }
+    </script>
+</html>

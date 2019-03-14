@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="text/html">
+        <title>第二个案例</title> 
+    </head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{color:#999;font:12px/1.5 Tahoma;}
+#outer{width:500px;margin:0 auto;}
+#outer input{padding:3px;border:1px solid #ccc;font-family:inherit;width:220px;margin-right:10px;}
+.sum{font-size:30px;color:red;}
+
+
+    </style>
+    <body di="body">
+        <div id="outer">
+            <label><input type="text" id="txt"  value="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" /><span>输入数字求和，数字之间用半角","号分隔</span></label>
+            <p><button id="bt">求和</button></p>
+            <strong class="sum"></strong>
+        </div>
+    </body>
+    <script>
+      var txt=document.getElementById("txt")
+      var bt=document.getElementById('bt')
+      
+         var a=   txt.value.split(",")
+         
+   console.log(a)
+   bt.onclick=function(){
+    var ss=0
+     for(i=0;i<a.length;i++){
+         ss+=parseInt(a[i])
+
+     }
+    document.getElementsByTagName('strong')[0].innerHTML=ss
+   }
+  
+   
+    </script>
+</html>
